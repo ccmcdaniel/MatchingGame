@@ -38,12 +38,16 @@ namespace MatchingGame
                 icons.RemoveAt(chosen);
 
                 icon.Text = chosenText;
+
+                icon.ForeColor = icon.BackColor;
             }
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
+            Label icon = sender as Label;
 
+            icon.ForeColor = Color.Black;
         }
     }
 }
